@@ -21,6 +21,7 @@
         "docs": "https://docs.flarum.org/"
     },
     "require": {
+        "flarum-lang/german": "^1.4",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
         "flarum/core": "^1.6",
@@ -38,8 +39,7 @@
         "flarum/subscriptions": "*",
         "flarum/suspend": "*",
         "flarum/tags": "*",
-        "fof/passport": "dev-master",
-        "wulfheart/serve": "dev-master"
+        "fof/passport": "*"
     },
     "config": {
         "preferred-install": "dist",

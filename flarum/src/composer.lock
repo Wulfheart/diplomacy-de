@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dca22699c79aaaeaaa2aafc58996b11",
+    "content-hash": "904ba938276df456aa90b0023b5ec0dc",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -1050,6 +1050,63 @@
                 }
             ],
             "time": "2022-11-02T16:23:29+00:00"
+        },
+        {
+            "name": "flarum-lang/german",
+            "version": "1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum-lang/german.git",
+                "reference": "50fd920404e20bbdd261f157050f687a3e2d0380"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum-lang/german/zipball/50fd920404e20bbdd261f157050f687a3e2d0380",
+                "reference": "50fd920404e20bbdd261f157050f687a3e2d0380",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "German",
+                    "category": "language",
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundColor": "#ffffff",
+                        "backgroundSize": "cover",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flarum-locale": {
+                    "code": "de",
+                    "title": "Deutsch"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Prieto Wunderlich",
+                    "email": "prieto@wunderlich.pw",
+                    "role": "Translator"
+                }
+            ],
+            "description": "German language pack for Flarum.",
+            "homepage": "https://github.com/flarum-lang",
+            "keywords": [
+                "locale"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/2648",
+                "issues": "https://github.com/flarum-lang/german/issues",
+                "source": "https://github.com/flarum-lang/german"
+            },
+            "time": "2022-12-05T21:15:05+00:00"
         },
         {
             "name": "flarum/approval",
@@ -2457,16 +2514,16 @@
         },
         {
             "name": "fof/passport",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfFlarum/passport.git",
-                "reference": "ce398fbba6a9c710eba4aff682d01af1f9284720"
+                "reference": "d8712f5c32f6f5b932a310c0885af6db47ba4e15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/passport/zipball/ce398fbba6a9c710eba4aff682d01af1f9284720",
-                "reference": "ce398fbba6a9c710eba4aff682d01af1f9284720",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/passport/zipball/d8712f5c32f6f5b932a310c0885af6db47ba4e15",
+                "reference": "d8712f5c32f6f5b932a310c0885af6db47ba4e15",
                 "shasum": ""
             },
             "require": {
@@ -2476,7 +2533,6 @@
             "replace": {
                 "flagrow/passport": "*"
             },
-            "default-branch": true,
             "type": "flarum-extension",
             "extra": {
                 "flarum-extension": {
@@ -2533,7 +2589,7 @@
                     "type": "website"
                 }
             ],
-            "time": "2021-06-06T20:57:55+00:00"
+            "time": "2021-06-03T15:19:27+00:00"
         },
         {
             "name": "franzl/whoops-middleware",
@@ -9400,74 +9456,12 @@
                 "source": "https://github.com/wikimedia/less.php/tree/v3.2.0"
             },
             "time": "2023-01-09T18:45:54+00:00"
-        },
-        {
-            "name": "wulfheart/serve",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Wulfheart/serve.git",
-                "reference": "3cc7877cbafcee6010e2695ef5783c43e9973def"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Wulfheart/serve/zipball/3cc7877cbafcee6010e2695ef5783c43e9973def",
-                "reference": "3cc7877cbafcee6010e2695ef5783c43e9973def",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "Flagrow Serve",
-                    "icon": {
-                        "name": "server",
-                        "backgroundColor": "#f4f4f4",
-                        "color": "#5f4bb6"
-                    }
-                },
-                "flagrow": {
-                    "discuss": "https://discuss.flarum.org/d/6373-flagrow-serve-start-flarum-in-the-php-development-server"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Flagrow\\Serve\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Clark Winkelmann",
-                    "email": "clark.winkelmann@gmail.com",
-                    "homepage": "https://clarkwinkelmann.com/"
-                }
-            ],
-            "description": "Start Flarum in the PHP developement server",
-            "keywords": [
-                "console",
-                "extension",
-                "flagrow",
-                "flarum",
-                "server"
-            ],
-            "support": {
-                "issues": "https://github.com/flagrow/serve/issues",
-                "source": "https://github.com/flagrow/serve"
-            },
-            "time": "2023-01-24T22:13:59+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "fof/passport": 20,
-        "wulfheart/serve": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
