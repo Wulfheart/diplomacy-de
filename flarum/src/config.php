@@ -15,7 +15,7 @@
     'engine' => 'InnoDB',
     'prefix_indexes' => true,
   ),
-  'url' => 'http://localhost:8000',
+  'url' => 'http://localhost:8003',
   'paths' => 
   array (
     'api' => 'api',
