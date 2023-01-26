@@ -39,7 +39,11 @@
         "flarum/subscriptions": "*",
         "flarum/suspend": "*",
         "flarum/tags": "*",
-        "fof/passport": "*"
+        "fof/follow-tags": "^1.1",
+        "fof/masquerade": "^2.1",
+        "fof/passport": "^1.0",
+        "fof/subscribed": "^1.1",
+        "v17development/flarum-third-party-login-only": "^0.1.1"
     },
     "config": {
         "preferred-install": "dist",

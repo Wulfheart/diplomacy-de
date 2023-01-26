@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "904ba938276df456aa90b0023b5ec0dc",
+    "content-hash": "dff4e3c8579eca2a71ded004dc05cdca",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -2513,6 +2513,203 @@
             "time": "2022-11-16T10:30:13+00:00"
         },
         {
+            "name": "fof/extend",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/extend.git",
+                "reference": "f02c71d075213ec62237e042ed1a9c5d0c541dfd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/extend/zipball/f02c71d075213ec62237e042ed1a9c5d0c541dfd",
+                "reference": "f02c71d075213ec62237e042ed1a9c5d0c541dfd",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Extend\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martin",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Configurable PHP components for your Flarum extension",
+            "support": {
+                "issues": "https://github.com/FriendsOfFlarum/extend/issues",
+                "source": "https://github.com/FriendsOfFlarum/extend/tree/1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-11-14T11:03:21+00:00"
+        },
+        {
+            "name": "fof/follow-tags",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/follow-tags.git",
+                "reference": "eb7a2d3670504f7c0367eba348307e739f619005"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/follow-tags/zipball/eb7a2d3670504f7c0367eba348307e739f619005",
+                "reference": "eb7a2d3670504f7c0367eba348307e739f619005",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.3.0",
+                "flarum/tags": "^1.3.0",
+                "fof/extend": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Follow Tags",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-user-tag",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "flarum/subscriptions"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20525"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\FollowTags\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Follow tags and be notified of new discussions and replies",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20525",
+                "issues": "https://github.com/FriendsOfFlarum/follow-tags/issues",
+                "source": "https://github.com/FriendsOfFlarum/follow-tags"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-10-07T15:11:18+00:00"
+        },
+        {
+            "name": "fof/masquerade",
+            "version": "2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/masquerade.git",
+                "reference": "f0abe71ca5aa77de0eff58544668133ac63470ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/masquerade/zipball/f0abe71ca5aa77de0eff58544668133ac63470ab",
+                "reference": "f0abe71ca5aa77de0eff58544668133ac63470ab",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2"
+            },
+            "replace": {
+                "flagrow/masquerade": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Masquerade",
+                    "category": "feature",
+                    "icon": {
+                        "image": "resources/logo.svg",
+                        "backgroundColor": "#e74c3c",
+                        "backgroundSize": "90%",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/5791"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Masquerade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "https://luceos.com/"
+                },
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                }
+            ],
+            "description": "User profile builder extension for your Flarum forum.",
+            "keywords": [
+                "extension",
+                "flarum",
+                "member profile",
+                "profile",
+                "user profile"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/5791",
+                "issues": "https://github.com/FriendsOfFlarum/masquerade/issues",
+                "source": "https://github.com/FriendsOfFlarum/masquerade"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-08-01T21:32:07+00:00"
+        },
+        {
             "name": "fof/passport",
             "version": "1.0.0",
             "source": {
@@ -2590,6 +2787,83 @@
                 }
             ],
             "time": "2021-06-03T15:19:27+00:00"
+        },
+        {
+            "name": "fof/subscribed",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/subscribed.git",
+                "reference": "029999e8e0809bc2ca253c4979c511fd1302cc90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/subscribed/zipball/029999e8e0809bc2ca253c4979c511fd1302cc90",
+                "reference": "029999e8e0809bc2ca253c4979c511fd1302cc90",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "replace": {
+                "flagrow/subscribed": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Subscribed",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-reply-all",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "flarum/approval",
+                        "flarum/flags"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20917"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Subscribed\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FoF Team",
+                    "email": "team@friendsofflarum.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Additional user subscriptions for your forum",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "extension",
+                "flarum",
+                "fof",
+                "friendsofflarum",
+                "subscriptions"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20917",
+                "issues": "https://github.com/FriendsOfFlarum/subscribed/issues",
+                "source": "https://github.com/FriendsOfFlarum/subscribed"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-05-23T19:53:43+00:00"
         },
         {
             "name": "franzl/whoops-middleware",
@@ -9254,6 +9528,60 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.6"
             },
             "time": "2023-01-03T09:29:04+00:00"
+        },
+        {
+            "name": "v17development/flarum-third-party-login-only",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/v17development/flarum-third-party-login-only.git",
+                "reference": "5d4a7edf6079d9830fd347b862db418b71eaa93f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/v17development/flarum-third-party-login-only/zipball/5d4a7edf6079d9830fd347b862db418b71eaa93f",
+                "reference": "5d4a7edf6079d9830fd347b862db418b71eaa93f",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Third party login only",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-sign-in-alt",
+                        "backgroundColor": "#503cc5",
+                        "color": "#ffffff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "V17Development\\FlarumThirdPartyLoginOnly\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "V17 Development",
+                    "email": "info@v17.dev"
+                }
+            ],
+            "description": "Only allow login and sign ups from oAuth extensions.",
+            "homepage": "https://v17.dev/projects/flarum-third-party-login-only",
+            "support": {
+                "docs": "https://community.v17.dev/knowledgebase/category/flarum-third-party-login-only",
+                "forum": "https://discuss.flarum.org/d/28424",
+                "issues": "https://github.com/v17development/flarum-third-party-login-only/issues",
+                "source": "https://github.com/v17development/flarum-third-party-login-only/tree/v0.1.1"
+            },
+            "time": "2021-08-08T11:40:20+00:00"
         },
         {
             "name": "voku/portable-ascii",

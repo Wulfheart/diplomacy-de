@@ -3,7 +3,7 @@
       <?php if($language): ?> lang="<?php echo e($language); ?>" <?php endif; ?>>
     <head>
         <meta charset="utf-8">
-        <title><?php echo $title; ?></title>
+        <title><?php echo e($title); ?></title>
 
         <?php echo $head; ?>
 
